@@ -21,6 +21,7 @@ public class ConsumerRibbonController {
 
     @GetMapping("/consumer")
     public String consumer() {
+
         return restTemplate.getForObject("http://eureka-client/client", String.class);
 
     }

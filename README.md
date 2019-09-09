@@ -13,3 +13,10 @@
 ## 1.3. eureka-consumer
 - 访问http://localhost:3030/consumer
 ![](_v_images/20190906174812595_24039.png)
+## 1.4. eureka-consumer-ribbon
+- 访问http://localhost:3030/consumer
+![](_v_images/20190906174812595_24039.png)
+
+## 1.5. eureka-consumer-feign
+- 访问http://localhost:3030/consumer
+![](_v_images/20190906174812595_24039.png)
