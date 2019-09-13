@@ -2,16 +2,16 @@ package com.ada.eurekaconsumehystrix;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
-import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
-@EnableHystrix
+@EnableCircuitBreaker
 @EnableDiscoveryClient
 @SpringBootApplication
-public class EurekaConsumerRibbonApplication {
+public class EurekaConsumerHystrixApplication {
 
     @Bean
     @LoadBalanced
@@ -20,7 +20,7 @@ public class EurekaConsumerRibbonApplication {
     }
 
     public static void main(String[] args) {
-        new SpringApplicationBuilder(EurekaConsumerRibbonApplication.class).web(true).run(args);
+        new SpringApplicationBuilder(EurekaConsumerHystrixApplication.class).web(true).run(args);
 
     }
 
