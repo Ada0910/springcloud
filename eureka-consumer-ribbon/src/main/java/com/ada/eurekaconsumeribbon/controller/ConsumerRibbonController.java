@@ -1,4 +1,4 @@
-package com.ada.eurekaconsumehystrix.controller;
+package com.ada.eurekaconsumeribbon.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,22 +1,24 @@
-package com.ada.eurekaconsumerfeign;
+package com.ada.eurekaconsumeribbon;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @EnableDiscoveryClient
 @SpringBootApplication
-public class EurekaConsumerApplication {
+public class EurekaConsumerRibbonApplication {
 
     @Bean
-    public RestTemplate restTemplate(){
+    @LoadBalanced
+    public RestTemplate restTemplate() {
         return new RestTemplate();
     }
 
     public static void main(String[] args) {
-       new SpringApplicationBuilder(EurekaConsumerApplication.class).web(true).run(args);
+        new SpringApplicationBuilder(EurekaConsumerRibbonApplication.class).web(true).run(args);
 
     }
 

@@ -19,6 +19,7 @@ public class ConsumerFeignController {
 
     @GetMapping("/consumer")
     public String feign() {
+
         return consumerFeignClient.consumer();
     }
 }

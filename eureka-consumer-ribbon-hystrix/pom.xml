@@ -9,7 +9,7 @@
         <relativePath/>
     </parent>
     <groupId>com.ada</groupId>
-    <artifactId>eureka-consumer</artifactId>
+    <artifactId>eureka-consumer-ribbon-hystrix</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>eureka-consumer-ribbon-hystrix</name>
 
