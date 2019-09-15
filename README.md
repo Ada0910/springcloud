@@ -43,3 +43,10 @@
 
 ## 1.9. api-gateway
 ![](_v_images/_1568453410_4335.png)
+
+## 1.10. config-sever
+![](_v_images/_1568536159_15751.png)
+
+## 1.11. config-client
+![](_v_images/_1568537201_25603.png)
+分发成功
