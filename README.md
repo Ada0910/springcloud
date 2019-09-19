@@ -50,3 +50,7 @@
 ## 1.11. config-client
 ![](_v_images/_1568537201_25603.png)
 分发成功
+## 1.12. rabbitmq
+![](_v_images/_1568902562_13707.png)
+
+![](_v_images/_1568902684_27794.png)
